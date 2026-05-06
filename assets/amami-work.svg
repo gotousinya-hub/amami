@@ -1,0 +1,31 @@
+<svg width="860" height="760" viewBox="0 0 860 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">奄美の空気感と施工品質を表現したイメージ</title>
+  <desc id="desc">海風を感じる青緑の風景に、足場と仕上げ材を思わせる幾何学的なレイヤーを重ねた抽象ビジュアル。</desc>
+  <defs>
+    <linearGradient id="bg" x1="105" y1="50" x2="736" y2="716" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7DC"/>
+      <stop offset="0.37" stop-color="#82D2D9"/>
+      <stop offset="1" stop-color="#083D5B"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="244" y1="158" x2="648" y2="608" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.14"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="860" height="760" rx="58" fill="url(#bg)"/>
+  <circle cx="164" cy="149" r="92" fill="#F16F5D" opacity="0.34" filter="url(#soft)"/>
+  <circle cx="677" cy="120" r="76" fill="#FFF2C4" opacity="0.95"/>
+  <path d="M0 449C99 394 207 382 326 415C485 459 593 521 860 399V760H0V449Z" fill="#0C8FB4" opacity="0.36"/>
+  <path d="M0 548C128 484 253 491 408 549C568 609 701 610 860 524V760H0V548Z" fill="#DDBF86" opacity="0.84"/>
+  <path d="M188 190H598C619 190 636 207 636 228V616H150V228C150 207 167 190 188 190Z" fill="#0A1628" opacity="0.72"/>
+  <path d="M190 230H296V333H190V230ZM330 230H436V333H330V230ZM470 230H586V333H470V230ZM190 369H296V472H190V369ZM330 369H436V472H330V369ZM470 369H586V472H470V369Z" fill="url(#panel)"/>
+  <path d="M98 612H714" stroke="#FFF7DC" stroke-opacity="0.86" stroke-width="20" stroke-linecap="round"/>
+  <path d="M656 338H740V621H656V338Z" fill="#083D5B" opacity="0.82"/>
+  <path d="M681 371H717V417H681V371ZM681 452H717V498H681V452ZM681 533H717V579H681V533Z" fill="#FFF7DC" opacity="0.3"/>
+  <path d="M119 620C234 578 341 574 449 604C560 635 662 624 790 568" stroke="#0C8FB4" stroke-opacity="0.42" stroke-width="9" stroke-linecap="round"/>
+  <path d="M98 152L759 620" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2"/>
+  <path d="M146 120L807 588" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+</svg>

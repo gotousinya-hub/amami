@@ -1,0 +1,40 @@
+<svg width="920" height="1040" viewBox="0 0 920 1040" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">奄美の海と建設現場を重ねたイメージ</title>
+  <desc id="desc">青い海、砂浜、島影、建設中の建物シルエットを柔らかな光で表現した抽象的なビジュアル。</desc>
+  <defs>
+    <linearGradient id="sky" x1="146" y1="37" x2="750" y2="987" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFEAF4"/>
+      <stop offset="0.43" stop-color="#31AFCB"/>
+      <stop offset="1" stop-color="#083D5B"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="183" y1="706" x2="843" y2="898" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2C4"/>
+      <stop offset="0.48" stop-color="#DAB574"/>
+      <stop offset="1" stop-color="#F16F5D"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="438" y1="231" x2="735" y2="788" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="920" height="1040" rx="68" fill="url(#sky)"/>
+  <circle cx="735" cy="156" r="92" fill="#FFF6CF" opacity="0.95"/>
+  <circle cx="735" cy="156" r="132" stroke="white" stroke-opacity="0.34" stroke-width="2"/>
+  <path d="M0 579C102 530 216 519 337 548C498 587 584 663 731 620C818 595 877 551 920 520V1040H0V579Z" fill="#0A6E8E" opacity="0.45"/>
+  <path d="M0 678C119 616 257 612 409 665C567 720 694 749 920 650V1040H0V678Z" fill="#3EB489" opacity="0.55"/>
+  <path d="M0 786C117 704 260 694 426 756C609 825 753 837 920 746V1040H0V786Z" fill="url(#sand)"/>
+  <path d="M88 474C137 404 214 370 295 378C343 383 380 406 414 438C334 456 258 478 177 508C142 500 113 489 88 474Z" fill="#06324A" opacity="0.78"/>
+  <path d="M475 420C535 349 611 315 684 322C742 328 793 361 834 413C711 399 596 402 475 420Z" fill="#06324A" opacity="0.62"/>
+  <path d="M526 289H739C759 289 775 305 775 325V766H490V325C490 305 506 289 526 289Z" fill="#0A1628" opacity="0.75"/>
+  <path d="M544 326H597V398H544V326ZM626 326H679V398H626V326ZM708 326H741V398H708V326ZM544 431H597V503H544V431ZM626 431H679V503H626V431ZM708 431H741V503H708V431ZM544 536H597V608H544V536ZM626 536H679V608H626V536ZM708 536H741V608H708V536Z" fill="url(#glass)"/>
+  <path d="M388 582H837V785H388V582Z" fill="#0A1628" opacity="0.82"/>
+  <path d="M420 620H493V785H420V620ZM531 620H604V785H531V620ZM642 620H715V785H642V620ZM753 620H803V785H753V620Z" fill="#FFF7DC" opacity="0.26"/>
+  <path d="M354 565H857" stroke="#FFF7DC" stroke-opacity="0.76" stroke-width="18" stroke-linecap="round"/>
+  <path d="M303 779C415 733 521 724 621 752C704 775 792 766 920 706V1040H0V869C92 845 196 823 303 779Z" fill="#FFF7DC" opacity="0.78"/>
+  <path d="M92 850C194 813 272 806 375 827C489 850 611 858 741 820" stroke="#0C8FB4" stroke-opacity="0.36" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="186" cy="249" r="112" fill="#F16F5D" opacity="0.22" filter="url(#blur)"/>
+  <circle cx="706" cy="812" r="160" fill="#FFF7DC" opacity="0.18" filter="url(#blur)"/>
+</svg>
