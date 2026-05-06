@@ -1,18 +1,17 @@
 :root {
-  color-scheme: light;
-  --ink: #0a1628;
-  --muted: #5e6a79;
-  --paper: #f7f2e8;
-  --paper-deep: #eee5d4;
-  --white: #fffaf1;
-  --blue: #0c8fb4;
-  --blue-dark: #083d5b;
-  --green: #3eb489;
-  --sand: #dcbf86;
-  --coral: #f16f5d;
-  --shadow: 0 24px 70px rgba(8, 61, 91, 0.18);
+  --ink: #20170f;
+  --muted: #776656;
+  --paper: #f7efe3;
+  --cream: #fffaf1;
+  --smoke: #2a2520;
+  --kombu: #1e251d;
+  --amber: #c78334;
+  --gold: #f0c36a;
+  --copper: #9e5d32;
+  --line: rgba(32, 23, 15, 0.12);
+  --shadow: 0 28px 80px rgba(32, 23, 15, 0.18);
   --radius-lg: 34px;
-  --radius-md: 22px;
+  --radius-md: 24px;
   --max: 1180px;
 }
 
@@ -24,9 +23,9 @@ body {
   margin: 0;
   font-family: "Noto Sans JP", system-ui, sans-serif;
   background:
-    radial-gradient(circle at 15% 10%, rgba(62, 180, 137, 0.20), transparent 26rem),
-    radial-gradient(circle at 82% 5%, rgba(12, 143, 180, 0.18), transparent 24rem),
-    linear-gradient(135deg, #fffaf1 0%, var(--paper) 48%, #edf8f6 100%);
+    radial-gradient(circle at 14% 10%, rgba(240, 195, 106, 0.26), transparent 26rem),
+    radial-gradient(circle at 86% 4%, rgba(158, 93, 50, 0.18), transparent 24rem),
+    linear-gradient(135deg, var(--cream) 0%, var(--paper) 48%, #efe1cf 100%);
   color: var(--ink);
   min-height: 100vh;
   overflow-x: hidden;
@@ -38,16 +37,16 @@ a { color: inherit; text-decoration: none; }
 
 img { display: block; max-width: 100%; }
 
-.page-noise {
+.page-texture {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.16;
+  opacity: 0.18;
   z-index: -1;
   background-image:
-    linear-gradient(rgba(10, 22, 40, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10, 22, 40, 0.04) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(32, 23, 15, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 23, 15, 0.04) 1px, transparent 1px);
+  background-size: 42px 42px;
   mask-image: linear-gradient(to bottom, black, transparent 72%);
 }
 
@@ -63,17 +62,17 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
   gap: 20px;
   padding: 12px 14px 12px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 999px;
   background: rgba(255, 250, 241, 0.76);
-  box-shadow: 0 16px 48px rgba(8, 61, 91, 0.10);
+  box-shadow: 0 16px 48px rgba(32, 23, 15, 0.10);
   backdrop-filter: blur(18px);
-  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
 .site-header.is-scrolled {
-  background: rgba(255, 250, 241, 0.93);
-  box-shadow: 0 18px 56px rgba(8, 61, 91, 0.16);
+  background: rgba(255, 250, 241, 0.94);
+  box-shadow: 0 18px 56px rgba(32, 23, 15, 0.16);
 }
 
 .brand {
@@ -89,10 +88,10 @@ img { display: block; max-width: 100%; }
   width: 44px;
   height: 44px;
   border-radius: 16px;
-  background: linear-gradient(145deg, var(--blue), var(--green));
-  color: white;
-  font: 900 1.35rem/1 "Outfit", sans-serif;
-  box-shadow: 0 12px 26px rgba(12, 143, 180, 0.28);
+  background: linear-gradient(145deg, var(--smoke), var(--copper));
+  color: var(--gold);
+  font: 900 1.1rem/1 "Noto Serif JP", serif;
+  box-shadow: 0 12px 26px rgba(158, 93, 50, 0.28);
 }
 
 .brand-name,
@@ -102,8 +101,8 @@ img { display: block; max-width: 100%; }
 
 .brand-sub {
   color: var(--muted);
-  font: 700 0.72rem/1.2 "Outfit", sans-serif;
-  letter-spacing: 0.22em;
+  font: 700 0.68rem/1.2 "Outfit", sans-serif;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -111,7 +110,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--blue-dark);
+  color: var(--kombu);
   font: 700 0.82rem/1 "Outfit", "Noto Sans JP", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -124,14 +123,14 @@ img { display: block; max-width: 100%; }
 }
 
 .global-nav a:hover {
-  background: rgba(12, 143, 180, 0.10);
+  background: rgba(158, 93, 50, 0.10);
   transform: translateY(-1px);
 }
 
 .global-nav .nav-contact {
   background: var(--ink);
   color: white;
-  box-shadow: 0 10px 22px rgba(10, 22, 40, 0.16);
+  box-shadow: 0 10px 22px rgba(32, 23, 15, 0.16);
 }
 
 .menu-toggle { display: none; }
@@ -154,7 +153,7 @@ img { display: block; max-width: 100%; }
 .eyebrow,
 .section-label {
   margin: 0 0 18px;
-  color: var(--blue);
+  color: var(--copper);
   font: 900 0.76rem/1.2 "Outfit", "Noto Sans JP", sans-serif;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -164,16 +163,17 @@ img { display: block; max-width: 100%; }
 .intro h2,
 .section-head h2,
 .feature-copy h2,
-.company h2,
-.contact h2 {
+.story h2,
+.faq h2 {
   margin: 0;
   letter-spacing: -0.05em;
-  line-height: 1.02;
+  line-height: 1.03;
 }
 
 .hero h1 {
   max-width: 760px;
-  font-size: clamp(3.7rem, 9.2vw, 7.8rem);
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(3.5rem, 8.6vw, 7.4rem);
   font-weight: 900;
 }
 
@@ -207,15 +207,35 @@ img { display: block; max-width: 100%; }
 .button:hover { transform: translateY(-2px); }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--ink), var(--blue-dark));
+  background: linear-gradient(135deg, var(--ink), var(--kombu));
   color: white;
-  box-shadow: 0 16px 34px rgba(10, 22, 40, 0.20);
+  box-shadow: 0 16px 34px rgba(32, 23, 15, 0.20);
 }
 
 .button-ghost {
-  border: 1px solid rgba(8, 61, 91, 0.16);
+  border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.48);
-  color: var(--blue-dark);
+  color: var(--kombu);
+}
+
+.hero-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-notes li,
+.pairing-tags span {
+  border: 1px solid rgba(158, 93, 50, 0.18);
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: rgba(255, 250, 241, 0.68);
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .hero-visual {
@@ -232,10 +252,10 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-visual::before {
-  inset: 7% -4% auto auto;
+  inset: 6% -6% auto auto;
   width: 72%;
   aspect-ratio: 1;
-  background: rgba(62, 180, 137, 0.18);
+  background: rgba(240, 195, 106, 0.28);
   filter: blur(18px);
 }
 
@@ -244,7 +264,7 @@ img { display: block; max-width: 100%; }
   bottom: 2%;
   width: 46%;
   aspect-ratio: 1;
-  background: rgba(241, 111, 93, 0.16);
+  background: rgba(68, 44, 24, 0.16);
   filter: blur(20px);
 }
 
@@ -255,32 +275,32 @@ img { display: block; max-width: 100%; }
   box-shadow: var(--shadow);
 }
 
-.hero-card {
+.floating-card {
   position: absolute;
   display: grid;
   gap: 4px;
   min-width: 168px;
-  border: 1px solid rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.70);
   border-radius: 24px;
   padding: 18px;
-  background: rgba(255, 250, 241, 0.82);
-  box-shadow: 0 18px 44px rgba(8, 61, 91, 0.16);
+  background: rgba(255, 250, 241, 0.84);
+  box-shadow: 0 18px 44px rgba(32, 23, 15, 0.16);
   backdrop-filter: blur(16px);
 }
 
-.hero-card span {
+.floating-card span {
   color: var(--muted);
   font: 700 0.72rem/1 "Outfit", sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.hero-card strong {
-  font: 900 1.3rem/1.1 "Outfit", "Noto Sans JP", sans-serif;
+.floating-card strong {
+  font: 900 1.28rem/1.1 "Outfit", "Noto Sans JP", sans-serif;
 }
 
-.hero-card-top { top: 8%; left: -7%; }
-.hero-card-bottom { right: -4%; bottom: 9%; }
+.floating-card-top { top: 7%; left: -7%; }
+.floating-card-bottom { right: -4%; bottom: 9%; }
 
 .scroll-cue {
   position: absolute;
@@ -294,10 +314,10 @@ img { display: block; max-width: 100%; }
 }
 
 .intro,
-.services,
 .feature,
-.company,
-.contact { padding-block: clamp(76px, 11vw, 132px); }
+.lineup,
+.story,
+.faq { padding-block: clamp(76px, 11vw, 132px); }
 
 .intro-grid {
   display: grid;
@@ -309,71 +329,21 @@ img { display: block; max-width: 100%; }
 .intro h2,
 .section-head h2,
 .feature-copy h2,
-.company h2,
-.contact h2 {
-  font-size: clamp(2.2rem, 5vw, 4.7rem);
+.story h2,
+.faq h2 {
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(2.15rem, 4.8vw, 4.5rem);
   font-weight: 900;
 }
 
 .intro p,
 .section-head p,
 .feature-copy p,
-.contact p {
+.story p,
+.faq-list p {
   margin: 0;
   color: var(--muted);
   line-height: 2;
-}
-
-.section-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: 38px;
-}
-
-.section-head p { max-width: 430px; }
-
-.service-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.service-card {
-  min-height: 330px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgba(8, 61, 91, 0.10);
-  border-radius: var(--radius-md);
-  padding: 26px;
-  background: rgba(255, 250, 241, 0.70);
-  box-shadow: 0 18px 48px rgba(8, 61, 91, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 250, 241, 0.94);
-  box-shadow: 0 28px 60px rgba(8, 61, 91, 0.14);
-}
-
-.card-number {
-  color: var(--coral);
-  font: 900 0.82rem/1 "Outfit", sans-serif;
-  letter-spacing: 0.2em;
-}
-
-.service-card h3 {
-  margin: auto 0 16px;
-  font-size: 1.55rem;
-}
-
-.service-card p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.9;
 }
 
 .feature {
@@ -390,13 +360,13 @@ img { display: block; max-width: 100%; }
   grid-template-columns: 56px 1fr;
   gap: 18px;
   padding: 24px 0;
-  border-top: 1px solid rgba(8, 61, 91, 0.14);
+  border-top: 1px solid var(--line);
 }
 
-.strength-item:last-child { border-bottom: 1px solid rgba(8, 61, 91, 0.14); }
+.strength-item:last-child { border-bottom: 1px solid var(--line); }
 
 .strength-item span {
-  color: var(--blue);
+  color: var(--copper);
   font: 900 0.92rem/1.4 "Outfit", sans-serif;
 }
 
@@ -405,65 +375,147 @@ img { display: block; max-width: 100%; }
   font-size: 1.18rem;
 }
 
-.company {
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(8, 61, 91, 0.94), rgba(12, 143, 180, 0.88));
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 38px;
+}
+
+.section-head p { max-width: 460px; }
+
+.price-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.price-card {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  align-content: start;
+  min-height: 390px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: clamp(24px, 3.8vw, 36px);
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 18px 48px rgba(32, 23, 15, 0.08);
+}
+
+.price-card.is-featured {
+  background: linear-gradient(145deg, rgba(32, 23, 15, 0.96), rgba(64, 47, 33, 0.92));
   color: white;
-  padding-inline: clamp(22px, 5vw, 68px);
-  box-shadow: var(--shadow);
+  transform: translateY(-12px);
+  box-shadow: 0 30px 72px rgba(32, 23, 15, 0.24);
 }
 
-.company .section-label { color: rgba(255, 255, 255, 0.72); }
+.price-card.is-featured .price-label,
+.price-card.is-featured .tax { color: rgba(255, 255, 255, 0.72); }
 
-.company-table {
-  display: grid;
-  gap: 0;
-  margin: 44px 0 0;
+.price-card.is-featured .button-primary {
+  background: linear-gradient(135deg, var(--gold), #d99a48);
+  color: var(--ink);
 }
 
-.company-table div {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 24px;
-  padding: 22px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.20);
-}
-
-.company-table div:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.20); }
-
-.company-table dt {
-  color: rgba(255, 255, 255, 0.70);
+.price-label {
+  width: fit-content;
+  margin: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(240, 195, 106, 0.22);
+  color: var(--copper);
   font-weight: 900;
 }
 
-.company-table dd { margin: 0; line-height: 1.8; }
+.price-card h3 {
+  margin: 14px 0 0;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1;
+}
 
-.contact-inner {
+.price {
+  margin: 0;
+  font: 900 clamp(3rem, 6vw, 5rem)/0.95 "Outfit", sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.price span { font-size: 0.45em; vertical-align: 0.55em; }
+
+.tax {
+  margin: -8px 0 10px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.story-inner {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
   padding: clamp(34px, 8vw, 82px);
   background:
-    linear-gradient(120deg, rgba(255, 250, 241, 0.94), rgba(237, 248, 246, 0.84)),
-    radial-gradient(circle at 92% 18%, rgba(241, 111, 93, 0.22), transparent 18rem);
+    linear-gradient(120deg, rgba(32, 23, 15, 0.94), rgba(64, 47, 33, 0.90)),
+    radial-gradient(circle at 92% 18%, rgba(240, 195, 106, 0.28), transparent 18rem);
+  color: white;
   box-shadow: var(--shadow);
 }
 
-.contact-inner::after {
-  content: "AMAMI";
+.story-inner::after {
+  content: "SMOKED";
   position: absolute;
   right: -0.05em;
   bottom: -0.18em;
-  color: rgba(12, 143, 180, 0.08);
+  color: rgba(255, 255, 255, 0.06);
   font: 900 clamp(5rem, 18vw, 14rem)/1 "Outfit", sans-serif;
   letter-spacing: -0.07em;
   pointer-events: none;
 }
 
-.contact p {
+.story .eyebrow { color: var(--gold); }
+
+.story p {
   max-width: 650px;
   margin: 24px 0 32px;
+  color: rgba(255, 255, 255, 0.78);
 }
+
+.pairing-tags {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pairing-tags span {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.10);
+  color: white;
+}
+
+.faq h2 { margin-bottom: 34px; }
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 14px 36px rgba(32, 23, 15, 0.06);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 900;
+}
+
+.faq-list p { margin-top: 14px; }
 
 .site-footer {
   width: min(calc(100% - 36px), var(--max));
@@ -514,8 +566,8 @@ img { display: block; max-width: 100%; }
     width: min(88vw, 360px);
     min-height: 100vh;
     padding: 112px 28px 28px;
-    background: rgba(255, 250, 241, 0.97);
-    box-shadow: -22px 0 70px rgba(8, 61, 91, 0.20);
+    background: rgba(255, 250, 241, 0.98);
+    box-shadow: -22px 0 70px rgba(32, 23, 15, 0.20);
     transform: translateX(110%);
     transition: transform 0.26s ease;
   }
@@ -532,23 +584,23 @@ img { display: block; max-width: 100%; }
 
   .hero { padding-top: 118px; }
   .hero-visual { max-width: 680px; margin-inline: auto; }
-  .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .price-list { grid-template-columns: 1fr; }
+  .price-card.is-featured { transform: none; }
   .section-head { align-items: start; flex-direction: column; }
 }
 
 @media (max-width: 640px) {
   .site-header { top: 10px; width: min(calc(100% - 20px), var(--max)); }
   .brand-name { font-size: 0.92rem; }
-  .brand-sub { font-size: 0.62rem; }
+  .brand-sub { font-size: 0.58rem; letter-spacing: 0.14em; }
   .brand-mark { width: 40px; height: 40px; border-radius: 14px; }
 
   .section-shell { width: min(calc(100% - 24px), var(--max)); }
   .hero { min-height: auto; padding-block: 112px 44px; }
-  .hero h1 { font-size: clamp(3.1rem, 16vw, 4.5rem); }
-  .hero-card { position: static; margin-top: 12px; }
+  .hero h1 { font-size: clamp(3rem, 15vw, 4.4rem); }
+  .floating-card { position: static; margin-top: 12px; }
   .scroll-cue { display: none; }
-  .service-list { grid-template-columns: 1fr; }
-  .service-card { min-height: 250px; }
-  .company-table div { grid-template-columns: 1fr; gap: 6px; }
+  .price-card { min-height: auto; }
+  .strength-item { grid-template-columns: 42px 1fr; }
   .site-footer { flex-direction: column; }
 }
